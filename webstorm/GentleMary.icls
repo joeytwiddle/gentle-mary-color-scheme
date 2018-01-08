@@ -1,18 +1,18 @@
 <scheme name="GentleMary" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2018-01-08T13:13:05</property>
+    <property name="created">2018-01-08T13:12:13</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.3.1.0.0</property>
-    <property name="modified">2018-01-08T13:13:07</property>
-    <property name="originalScheme">GentleMary 2 (Colors)</property>
+    <property name="modified">2018-01-08T13:12:23</property>
+    <property name="originalScheme">GentleMary 3 (Font)</property>
   </metaInfo>
-  <option name="EDITOR_FONT_SIZE" value="13" />
-  <option name="EDITOR_FONT_NAME" value="Envy Code Squat" />
+  <option name="EDITOR_FONT_SIZE" value="11" />
+  <option name="EDITOR_FONT_NAME" value="Lucida Sans Typewriter" />
   <option name="CONSOLE_FONT_NAME" value="Envy Code Squat" />
   <option name="CONSOLE_FONT_SIZE" value="12" />
   <colors>
-    <option name="SELECTION_BACKGROUND" value="c28a4a" />
+    <option name="SELECTION_BACKGROUND" value="518f62" />
     <option name="SELECTION_FOREGROUND" value="ffffff" />
   </colors>
   <attributes>
@@ -93,7 +93,7 @@
     </option>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="d4b87e" />
+        <option name="FOREGROUND" value="ccb385" />
       </value>
     </option>
     <option name="ERRORS_ATTRIBUTES">
