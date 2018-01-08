@@ -1,18 +1,18 @@
 <scheme name="GentleMary" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2018-01-08T13:12:13</property>
+    <property name="created">2018-01-08T13:14:05</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.3.1.0.0</property>
-    <property name="modified">2018-01-08T13:12:23</property>
-    <property name="originalScheme">GentleMary 3 (Font)</property>
+    <property name="modified">2018-01-08T13:14:10</property>
+    <property name="originalScheme">GentleMary 4 (Colors)</property>
   </metaInfo>
   <option name="EDITOR_FONT_SIZE" value="11" />
   <option name="EDITOR_FONT_NAME" value="Lucida Sans Typewriter" />
   <option name="CONSOLE_FONT_NAME" value="Envy Code Squat" />
   <option name="CONSOLE_FONT_SIZE" value="12" />
   <colors>
-    <option name="SELECTION_BACKGROUND" value="518f62" />
+    <option name="SELECTION_BACKGROUND" value="449059" />
     <option name="SELECTION_FOREGROUND" value="ffffff" />
   </colors>
   <attributes>
@@ -105,6 +105,10 @@
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
+    <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING" />
+    <option name="HTML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY" />
+    <option name="HTML_TAG" baseAttributes="DEFAULT_TAG" />
+    <option name="HTML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="ffffff" />
@@ -122,6 +126,12 @@
     <option name="INJECTED_LANGUAGE_FRAGMENT">
       <value>
         <option name="BACKGROUND" value="a0d0a" />
+      </value>
+    </option>
+    <option name="JADE_FILTER_NAME" baseAttributes="DEFAULT_LABEL" />
+    <option name="JADE_JS_BLOCK">
+      <value>
+        <option name="FOREGROUND" value="a9b7c6" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
