@@ -1,11 +1,11 @@
 <scheme name="GentleMary" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2018-03-07T15:46:20</property>
+    <property name="created">2018-04-20T12:21:19</property>
     <property name="ide">WebStorm</property>
-    <property name="ideVersion">2017.3.4.0.0</property>
-    <property name="modified">2018-03-07T15:46:30</property>
-    <property name="originalScheme">GentleMary 4 (Colors)</property>
+    <property name="ideVersion">2018.1.0.0</property>
+    <property name="modified">2018-04-20T12:21:47</property>
+    <property name="originalScheme">GentleMary 5 (purple)</property>
   </metaInfo>
   <option name="EDITOR_FONT_SIZE" value="11" />
   <option name="EDITOR_FONT_NAME" value="Lucida Sans Typewriter" />
@@ -67,6 +67,11 @@
       <value>
         <option name="FOREGROUND" value="af4a67" />
         <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DEFAULT_METADATA">
+      <value>
+        <option name="FOREGROUND" value="a576a0" />
       </value>
     </option>
     <option name="DEFAULT_NUMBER">
@@ -140,6 +145,11 @@
         <option name="BACKGROUND" value="b53193" />
         <option name="EFFECT_COLOR" value="bebe65" />
         <option name="ERROR_STRIPE_COLOR" value="3c3f41" />
+      </value>
+    </option>
+    <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="a576a0" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
