@@ -1,18 +1,19 @@
 <scheme name="GentleMary" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2018-07-11T11:34:17</property>
+    <property name="created">2018-12-03T14:48:12</property>
     <property name="ide">WebStorm</property>
-    <property name="ideVersion">2018.1.0.0</property>
-    <property name="modified">2018-07-11T11:35:03</property>
-    <property name="originalScheme">GentleMary 5 (purple)</property>
+    <property name="ideVersion">2018.2.4.0.0</property>
+    <property name="modified">2018-12-03T14:48:16</property>
+    <property name="originalScheme">GentleMary 8</property>
   </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="11" />
   <option name="EDITOR_FONT_NAME" value="Lucida Sans Typewriter" />
   <option name="CONSOLE_FONT_NAME" value="Envy Code Squat" />
   <option name="CONSOLE_FONT_SIZE" value="12" />
   <colors>
-    <option name="SELECTION_BACKGROUND" value="449059" />
+    <option name="SELECTION_BACKGROUND" value="b2843a" />
     <option name="SELECTION_FOREGROUND" value="ffffff" />
   </colors>
   <attributes>
@@ -65,7 +66,7 @@
     </option>
     <option name="DEFAULT_GLOBAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="dddddd" />
+        <option name="FOREGROUND" value="a576a0" />
       </value>
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
@@ -108,7 +109,7 @@
     </option>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="ccb385" />
+        <option name="FOREGROUND" value="d4bb8a" />
       </value>
     </option>
     <option name="ERRORS_ATTRIBUTES">
@@ -140,7 +141,7 @@
     </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
       <value>
-        <option name="BACKGROUND" value="a0d0a" />
+        <option name="BACKGROUND" value="1f1f1f" />
       </value>
     </option>
     <option name="JADE_FILTER_NAME" baseAttributes="DEFAULT_LABEL" />
