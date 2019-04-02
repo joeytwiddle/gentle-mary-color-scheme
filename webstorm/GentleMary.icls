@@ -1,10 +1,10 @@
 <scheme name="GentleMary" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2019-02-11T10:52:38</property>
+    <property name="created">2019-04-02T10:03:45</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2018.3.4.0.0</property>
-    <property name="modified">2019-02-11T10:53:30</property>
+    <property name="modified">2019-04-02T10:04:11</property>
     <property name="originalScheme">GentleMary 9</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.0" />
@@ -130,6 +130,7 @@
       <value>
         <option name="FOREGROUND" value="ffffff" />
         <option name="BACKGROUND" value="6600" />
+        <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -190,6 +191,7 @@
       <value>
         <option name="FOREGROUND" value="ffffff" />
         <option name="BACKGROUND" value="993600" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="XML_TAG">
