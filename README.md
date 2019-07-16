@@ -1,6 +1,6 @@
 It looks like this in WebStorm:
 
-![gentlemary in WebStorm, reduced](https://user-images.githubusercontent.com/911799/61019818-1d334300-a3ce-11e9-9a90-9ee6e92c15a2.png)
+<img width="600" src="https://user-images.githubusercontent.com/911799/61277448-c326e900-a7e4-11e9-9a92-5d953413bde2.png">
 
 VSCode version [is here](https://github.com/joeytwiddle/rc_files/tree/master/.vscode/extensions/joeytwiddle.gentle-mary-0.0.1).
 
