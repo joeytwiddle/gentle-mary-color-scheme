@@ -1,11 +1,11 @@
-<scheme name="GentleMary" version="142" parent_scheme="Darcula">
+<scheme name="GentleMary 13" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2019-06-07T10:57:27</property>
+    <property name="created">2019-07-29T14:18:46</property>
     <property name="ide">WebStorm</property>
-    <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2019-06-07T10:58:00</property>
-    <property name="originalScheme">GentleMary 12 purple types</property>
+    <property name="ideVersion">2019.2.0.0</property>
+    <property name="modified">2019-07-29T14:19:17</property>
+    <property name="originalScheme">GentleMary 13</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="11" />
@@ -160,6 +160,20 @@
     <option name="JADE_JS_BLOCK">
       <value>
         <option name="FOREGROUND" value="a9b7c6" />
+      </value>
+    </option>
+    <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD" />
+    <option name="MARKDOWN_BOLD">
+      <value>
+        <option name="FOREGROUND" value="ccdbee" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_ITALIC">
+      <value>
+        <option name="FOREGROUND" value="ccdbee" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
