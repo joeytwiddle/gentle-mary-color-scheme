@@ -10,6 +10,8 @@ I do have a port for Vim too, but I have not yet published it. Feel free to hara
 
 The general idea:
 
+- Use primary colours (not unusual colours like Monokai!) but soften them a bit. Hence "gentle primary" = gentle-mary.
+- Yes, it's boring, but it's gentle on the eye.
 - Keywords/statements are red
 - Functions and methods are green
 - Properties are blue
