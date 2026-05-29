@@ -256,9 +256,30 @@
       </dict>
     </dict>
 
+    <!--
+      Template expression content — reset to default foreground so code inside ${} isn't yellow.
+      meta.template.expression is nested *inside* string.template in the scope chain, so it wins
+      over the string rule for all tokens in the interpolation. Specific rules (keywords, functions,
+      etc.) are deeper still, so they continue to override this reset.
+    -->
+    <dict>
+      <key>name</key>   <string>Template Expression Content</string>
+      <key>scope</key>  <string>
+        meta.template.expression,
+        meta.interpolation,
+        source.ts.embedded.expression,
+        source.js.embedded.expression
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#cccccc</string>
+        <key>fontStyle</key>   <string></string>
+      </dict>
+    </dict>
+
     <!-- Template expression delimiters ${ } — red bold (VSCode + Vim: Statement) -->
     <dict>
-      <key>name</key>   <string>Template Expression</string>
+      <key>name</key>   <string>Template Expression Delimiters</string>
       <key>scope</key>  <string>
         punctuation.definition.template-expression,
         punctuation.definition.template-expression.begin,
