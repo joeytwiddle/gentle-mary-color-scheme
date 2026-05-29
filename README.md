@@ -2,9 +2,43 @@ It looks like this in WebStorm:
 
 <img width="600" src="https://user-images.githubusercontent.com/911799/61277448-c326e900-a7e4-11e9-9a92-5d953413bde2.png">
 
-VSCode version [is here](https://github.com/joeytwiddle/rc_files/tree/master/.vscode/extensions/joeytwiddle.gentle-mary-0.0.1).
+## Installation
 
-I do have a port for Vim too, but I have not yet published it. Feel free to harass me.
+### WebStorm
+
+1. Open **Settings → Editor → Color Scheme**.
+2. Click the gear icon → **Import Scheme**.
+3. Select `webstorm/GentleMary.icls` from this repo.
+
+### VSCode
+
+The extension lives in [rc_files](https://github.com/joeytwiddle/rc_files/tree/master/.vscode/extensions/joeytwiddle.gentle-mary-0.0.1).
+
+```sh
+git clone https://github.com/joeytwiddle/rc_files.git
+ln -s "$PWD/rc_files/.vscode/extensions/joeytwiddle.gentle-mary-0.0.1" \
+      ~/.vscode/extensions/joeytwiddle.gentle-mary-0.0.1
+```
+
+Then select **Gentle Mary** via **Preferences → Color Theme**.
+
+### Vim
+
+Not yet published in a standalone form — feel free to bug me.
+
+### bat
+
+```sh
+mkdir -p "$(bat --config-dir)/themes"
+ln -s "$PWD/bat/GentleMary.tmTheme" "$(bat --config-dir)/themes/GentleMary.tmTheme"
+bat cache --build
+```
+
+Then either pass `--theme="GentleMary"` per invocation, or add it to your bat config:
+
+```sh
+echo '--theme="GentleMary"' >> "$(bat --config-dir)/config"
+```
 
 ----
 
