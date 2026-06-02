@@ -90,6 +90,7 @@
         keyword.operator.void,
         keyword.operator.logical.python,
         keyword.other.import,
+        storage,
         storage.type,
         storage.modifier
       </string>
@@ -100,10 +101,10 @@
       </dict>
     </dict>
 
-    <!-- "this" / "self" — purple (Vim: jsThis → GentleMaryPurple / VSCode: variable.language.this) -->
+    <!-- "this" / "self" / "super" — purple (Vim: jsThis/jsSuper → GentleMaryPurple / VSCode: variable.language.this) -->
     <dict>
-      <key>name</key>   <string>This / Self</string>
-      <key>scope</key>  <string>variable.language.this, variable.language.self</string>
+      <key>name</key>   <string>This / Self / Super</string>
+      <key>scope</key>  <string>variable.language.this, variable.language.self, variable.language.super</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>  <string>#a576a0</string>
@@ -227,6 +228,21 @@
       <dict>
         <key>foreground</key>  <string>#66bbcc</string>
         <key>fontStyle</key>   <string></string>
+      </dict>
+    </dict>
+
+    <!-- Character literals, Ruby symbols, CSS colours — cyan, like numbers (value-like literals) -->
+    <dict>
+      <key>name</key>   <string>Character / Symbol / Colour literal</string>
+      <key>scope</key>  <string>
+        constant.character,
+        constant.other.symbol,
+        constant.other.color,
+        constant.other.colour
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#66bbcc</string>
       </dict>
     </dict>
 
@@ -409,6 +425,22 @@
       </dict>
     </dict>
 
+    <!-- CSS pseudo-classes / pseudo-elements (:hover, ::before) — green, like class selectors -->
+    <dict>
+      <key>name</key>   <string>CSS Pseudo Selector</string>
+      <key>scope</key>  <string>
+        entity.other.attribute-name.pseudo-class,
+        entity.other.attribute-name.pseudo-element,
+        entity.other.attribute-name.pseudo-selector,
+        entity.other.pseudo-class,
+        entity.other.pseudo-element
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#3da676</string>
+      </dict>
+    </dict>
+
     <!-- CSS ID selectors — plain foreground, not highlighted (VSCode) -->
     <dict>
       <key>name</key>   <string>CSS ID Selector</string>
@@ -552,6 +584,28 @@
       </dict>
     </dict>
 
+    <!-- Markdown strikethrough — comment grey (visually "removed") -->
+    <dict>
+      <key>name</key>   <string>Markdown Strikethrough</string>
+      <key>scope</key>  <string>markup.strike, markup.strikethrough</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#777777</string>
+        <key>fontStyle</key>   <string>italic</string>
+      </dict>
+    </dict>
+
+    <!-- Markdown / generic underline — blue underline (link-like) -->
+    <dict>
+      <key>name</key>   <string>Markdown Underline</string>
+      <key>scope</key>  <string>markup.underline</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#4b95dc</string>
+        <key>fontStyle</key>   <string>underline</string>
+      </dict>
+    </dict>
+
     <!-- Markdown list bullets — red bold (VSCode) -->
     <dict>
       <key>name</key>   <string>Markdown List Bullet</string>
@@ -617,6 +671,81 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>  <string>#4b95dc</string>
+      </dict>
+    </dict>
+
+    <!-- ───── Diff / Git ───── -->
+    <!-- Base markup.* scopes also cover the *.git_gutter and *.diff variants via prefix matching. -->
+
+    <!-- Added / inserted lines — green -->
+    <dict>
+      <key>name</key>   <string>Diff Inserted</string>
+      <key>scope</key>  <string>markup.inserted, markup.inserted.diff, markup.inserted.git_gutter</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#3da676</string>
+      </dict>
+    </dict>
+
+    <!-- Removed / deleted lines — red -->
+    <dict>
+      <key>name</key>   <string>Diff Deleted</string>
+      <key>scope</key>  <string>markup.deleted, markup.deleted.diff, markup.deleted.git_gutter</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#af4a67</string>
+      </dict>
+    </dict>
+
+    <!-- Changed / modified lines — string yellow -->
+    <dict>
+      <key>name</key>   <string>Diff Changed</string>
+      <key>scope</key>  <string>markup.changed, markup.changed.git_gutter</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#ccb385</string>
+      </dict>
+    </dict>
+
+    <!-- Ignored / untracked — comment grey -->
+    <dict>
+      <key>name</key>   <string>Diff Ignored / Untracked</string>
+      <key>scope</key>  <string>markup.ignored, markup.ignored.git_gutter, markup.untracked, markup.untracked.git_gutter</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#777777</string>
+      </dict>
+    </dict>
+
+    <!-- Diff header lines (diff --git, ---, +++) — comment grey, deemphasised -->
+    <dict>
+      <key>name</key>   <string>Diff Header</string>
+      <key>scope</key>  <string>meta.diff, meta.diff.header</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#777777</string>
+      </dict>
+    </dict>
+
+    <!-- Diff hunk range (@@ -1,3 +1,3 @@) — purple -->
+    <dict>
+      <key>name</key>   <string>Diff Range</string>
+      <key>scope</key>  <string>meta.diff.range, punctuation.definition.range.diff</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#a576a0</string>
+      </dict>
+    </dict>
+
+    <!-- ───── Other languages ───── -->
+
+    <!-- Ruby special methods (require, include, attr_accessor) — green, method-like -->
+    <dict>
+      <key>name</key>   <string>Special Method</string>
+      <key>scope</key>  <string>keyword.other.special-method</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#3da676</string>
       </dict>
     </dict>
 
