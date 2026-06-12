@@ -170,6 +170,22 @@
       </dict>
     </dict>
 
+    <!--
+      Variables (all languages) — property blue.
+      Deliberate divergence from the original "variables are muted grey" design.
+      Broad scopes; the more-specific rules below still win — constants/globals stay
+      bright white, this/self/super stay purple. Languages whose grammar leaves bare
+      identifiers unscoped (e.g. Python locals, SQL fields) can't be reached here.
+    -->
+    <dict>
+      <key>name</key>   <string>Variable</string>
+      <key>scope</key>  <string>variable.other, variable.parameter</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#4b95dc</string>
+      </dict>
+    </dict>
+
     <!-- Properties / object members — blue (all sources agree) -->
     <dict>
       <key>name</key>   <string>Property / Object member</string>
@@ -201,6 +217,22 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>  <string>#eeeeee</string>
+      </dict>
+    </dict>
+
+    <!--
+      JS/TS consts — blue, treated like ordinary variables (overrides the bright-white
+      Constant/Global rule above, but only inside source.js/source.ts so other languages'
+      constants stay white). NOTE: bat's JS/TS grammar scopes UPPER_CASE consts with the
+      same variable.other.constant scope as lowercase consts, so they cannot be told apart
+      by the theme — every JS/TS const is blue regardless of case.
+    -->
+    <dict>
+      <key>name</key>   <string>JS/TS Const</string>
+      <key>scope</key>  <string>source.js variable.other.constant, source.ts variable.other.constant</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>  <string>#4b95dc</string>
       </dict>
     </dict>
 
