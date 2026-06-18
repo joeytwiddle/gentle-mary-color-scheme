@@ -132,12 +132,16 @@
       </dict>
     </dict>
 
-    <!-- Functions / methods — green (all sources agree) -->
+    <!--
+      Functions / methods — green (all sources agree).
+    -->
+    <!-- support.class matches built-in constructors (new Map(), new Date(), new Promise()) but also matches built-in objects (console.log, Promise.all). -->
     <dict>
       <key>name</key>   <string>Function name</string>
       <key>scope</key>  <string>
         entity.name.function,
         support.function,
+        support.class,
         entity.name.function.preprocessor,
         meta.definition.method entity.name.function
       </string>
