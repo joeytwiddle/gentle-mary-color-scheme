@@ -206,14 +206,19 @@
     </option>
     <option name="MARKDOWN_BOLD">
       <value>
-        <option name="FOREGROUND" value="ccdbee" />
+        <option name="FOREGROUND" value="a576a0" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN_ITALIC">
       <value>
-        <option name="FOREGROUND" value="ccdbee" />
+        <option name="FOREGROUND" value="af4a67" />
         <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_TABLE_SEPARATOR">
+      <value>
+        <option name="FOREGROUND" value="66bbcc" />
       </value>
     </option>
     <option name="SASS_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD" />

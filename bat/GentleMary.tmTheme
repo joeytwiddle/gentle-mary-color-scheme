@@ -576,24 +576,24 @@
       </dict>
     </dict>
 
-    <!-- Markdown bold — bright white for contrast -->
+    <!-- Markdown bold — magenta -->
     <dict>
       <key>name</key>   <string>Markdown Bold</string>
       <key>scope</key>  <string>markup.bold</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key>  <string>#ffffff</string>
+        <key>foreground</key>  <string>#a576a0</string>
         <key>fontStyle</key>   <string>bold</string>
       </dict>
     </dict>
 
-    <!-- Markdown italic — bright white for contrast -->
+    <!-- Markdown italic — red -->
     <dict>
       <key>name</key>   <string>Markdown Italic</string>
       <key>scope</key>  <string>markup.italic</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key>  <string>#ffffff</string>
+        <key>foreground</key>  <string>#af4a67</string>
         <key>fontStyle</key>   <string>italic</string>
       </dict>
     </dict>
@@ -620,14 +620,13 @@
       </dict>
     </dict>
 
-    <!-- Markdown list bullets — red bold (VSCode) -->
+    <!-- Table cell separators (pipes) — cyan -->
     <dict>
-      <key>name</key>   <string>Markdown List Bullet</string>
-      <key>scope</key>  <string>beginning.punctuation.definition.list, punctuation.definition.list.begin.markdown</string>
+      <key>name</key>   <string>Markdown Table Pipe</string>
+      <key>scope</key>  <string>punctuation.separator.table-cell</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key>  <string>#af4a67</string>
-        <key>fontStyle</key>   <string>bold</string>
+        <key>foreground</key>  <string>#66bbcc</string>
       </dict>
     </dict>
 
