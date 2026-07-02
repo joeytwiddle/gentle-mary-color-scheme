@@ -28,7 +28,12 @@ Then select **Gentle Mary** via **Preferences → Color Theme**.
 
 ### Vim
 
-Not yet published in a standalone form — feel free to bug me.
+```sh
+mkdir -p ~/.vim/colors
+ln -s "$PWD/vim/colors/gentlemary.vim" ~/.vim/colors/gentlemary.vim
+```
+
+Then add `colorscheme gentlemary` to your `~/.vimrc` (or run `:colorscheme gentlemary`).
 
 ### bat
 
