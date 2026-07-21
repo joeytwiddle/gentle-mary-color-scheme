@@ -49,6 +49,17 @@ Then either pass `--theme="GentleMary"` per invocation, or add it to your bat co
 echo '--theme="GentleMary"' >> "$(bat --config-dir)/config"
 ```
 
+### OpenCode
+
+```sh
+mkdir -p ~/.config/opencode/themes
+ln -s "$PWD/opencode/themes/gentlemary.json" ~/.config/opencode/themes/gentlemary.json
+```
+
+Then pick it with the `/theme` command, or set `"theme": "gentlemary"` in your `opencode.json`. Requires a truecolor terminal (`COLORTERM=truecolor`).
+
+Being a TUI theme, this one paints by broad category (keyword, string, type, …) rather than per-scope, so it's coarser than the bat/VSCode/WebStorm ports.
+
 ----
 
 The general idea:
