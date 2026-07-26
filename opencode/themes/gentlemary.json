@@ -98,7 +98,7 @@
     "syntaxComment":     { "dark": "grey",      "light": "greyLight" },
     "syntaxKeyword":     { "dark": "red",       "light": "redLight" },
     "syntaxFunction":    { "dark": "green",     "light": "greenLight" },
-    "syntaxVariable":    { "dark": "fg",        "light": "fgLight" },
+    "syntaxVariable":    { "dark": "blue",      "light": "blueLight" },
     "syntaxString":      { "dark": "yellow",    "light": "yellowLight" },
     "syntaxNumber":      { "dark": "cyan",      "light": "cyanLight" },
     "syntaxType":        { "dark": "purple",    "light": "purpleLight" },
