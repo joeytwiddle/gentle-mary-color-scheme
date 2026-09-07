@@ -112,8 +112,9 @@ hi! link jsImport   Statement
 hi! link jsFrom     Statement
 
 " For the pangloss syntax
-hi! link jsObjectProp   javascriptProperty
-hi! link jsObjectKey    javascriptProperty
+hi! link jsObjectProp      javascriptProperty
+hi! link jsObjectKey       javascriptProperty
+hi! link jsObjectStringKey javascriptProperty
 hi! link jsFunctionKey  Function
 hi! link jsFuncCall     Function
 " Relates to VSCode's "storage.type"
