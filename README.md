@@ -37,15 +37,20 @@ Then add `colorscheme gentlemary` to your `~/.vimrc` (or run `:colorscheme gentl
 
 ### TextMate (.tmTheme)
 
-The `.tmTheme` file under `textmate/` uses the standard TextMate theme format,
-which is shared by many tools (bat, Codex CLI, Sublime Text, Lite-XL, BBEdit,
-…).
+The shared source of truth lives at `textmate/GentleMary.tmTheme`. It uses
+the standard TextMate theme format, which is shared by many tools (bat,
+Codex CLI, Sublime Text, Lite-XL, BBEdit, …).
 
-#### bat
+The `bat/` and `codex/` subdirectories each contain a symlink that points at
+`textmate/GentleMary.tmTheme`. They exist so each tool can later host its own
+location-specific README (or its own fork of the file) without disturbing the
+others — the symlinks can be replaced with real files at any time.
+
+### bat
 
 ```sh
 mkdir -p "$(bat --config-dir)/themes"
-ln -s "$PWD/textmate/GentleMary.tmTheme" "$(bat --config-dir)/themes/GentleMary.tmTheme"
+ln -s "$PWD/bat/GentleMary.tmTheme" "$(bat --config-dir)/themes/GentleMary.tmTheme"
 bat cache --build
 ```
 
@@ -55,11 +60,11 @@ Then either pass `--theme="GentleMary"` per invocation, or add it to your bat co
 echo '--theme="GentleMary"' >> "$(bat --config-dir)/config"
 ```
 
-#### Codex CLI
+### Codex CLI
 
 ```sh
 mkdir -p ~/.codex/themes
-ln -s "$PWD/textmate/GentleMary.tmTheme" ~/.codex/themes/GentleMary.tmTheme
+ln -s "$PWD/codex/GentleMary.tmTheme" ~/.codex/themes/GentleMary.tmTheme
 ```
 
 Then pick it from the in-app `/theme` picker (live preview; selection is
