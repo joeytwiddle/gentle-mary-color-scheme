@@ -35,11 +35,17 @@ ln -s "$PWD/vim/colors/gentlemary.vim" ~/.vim/colors/gentlemary.vim
 
 Then add `colorscheme gentlemary` to your `~/.vimrc` (or run `:colorscheme gentlemary`).
 
-### bat
+### TextMate (.tmTheme)
+
+The `.tmTheme` file under `textmate/` uses the standard TextMate theme format,
+which is shared by many tools (bat, Codex CLI, Sublime Text, Lite-XL, BBEdit,
+…).
+
+#### bat
 
 ```sh
 mkdir -p "$(bat --config-dir)/themes"
-ln -s "$PWD/bat/GentleMary.tmTheme" "$(bat --config-dir)/themes/GentleMary.tmTheme"
+ln -s "$PWD/textmate/GentleMary.tmTheme" "$(bat --config-dir)/themes/GentleMary.tmTheme"
 bat cache --build
 ```
 
@@ -48,6 +54,24 @@ Then either pass `--theme="GentleMary"` per invocation, or add it to your bat co
 ```sh
 echo '--theme="GentleMary"' >> "$(bat --config-dir)/config"
 ```
+
+#### Codex CLI
+
+```sh
+mkdir -p ~/.codex/themes
+ln -s "$PWD/textmate/GentleMary.tmTheme" ~/.codex/themes/GentleMary.tmTheme
+```
+
+Then pick it from the in-app `/theme` picker (live preview; selection is
+written to `[tui] theme` in `~/.codex/config.toml`), or set it directly:
+
+```toml
+# ~/.codex/config.toml
+[tui]
+theme = "gentlemary"
+```
+
+(Codex derives the theme name from the filename minus `.tmTheme`, kebab-cased.)
 
 ### OpenCode
 
@@ -58,7 +82,7 @@ ln -s "$PWD/opencode/themes/gentlemary.json" ~/.config/opencode/themes/gentlemar
 
 Then pick it with the `/theme` command, or set `"theme": "gentlemary"` in your `opencode.json`. Requires a truecolor terminal (`COLORTERM=truecolor`).
 
-Being a TUI theme, this one paints by broad category (keyword, string, type, …) rather than per-scope, so it's coarser than the bat/VSCode/WebStorm ports.
+Being a TUI theme, this one paints by broad category (keyword, string, type, …) rather than per-scope, so it's coarser than the bat, VSCode and WebStorm ports.
 
 ----
 
