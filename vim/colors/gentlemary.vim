@@ -145,6 +145,8 @@ hi! link jsTemplateBraces Statement
 hi! link jsonProperty    javascriptProperty
 " On Manjaro it is jsonKeyword
 hi! link jsonKeyword     javascriptProperty
+" JSON5 keys
+hi! link json5Key        javascriptProperty
 " De-emphasise punctuation in JSON
 hi! link jsonNoise        javaScriptSemicolon
 hi! link jsonQuote        jsonNoise
