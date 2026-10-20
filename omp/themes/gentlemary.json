@@ -21,7 +21,7 @@
     "borderSubtle": "#333333",
     "lineNr": "#585858",
     "errorRed": "#d21e29",
-    "diffAddBg": "#16261c",
+    "bgCode": "#202020",
     "diffRemBg": "#2b1a20"
   },
   "colors": {
@@ -44,7 +44,7 @@
     "customMessageText": "fg",
     "customMessageLabel": "purple",
     "toolPendingBg": "bgPanel",
-    "toolSuccessBg": "diffAddBg",
+    "toolSuccessBg": "bgCode",
     "toolErrorBg": "diffRemBg",
     "toolTitle": "white",
     "toolOutput": "fg",
