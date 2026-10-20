@@ -96,7 +96,7 @@ mkdir -p ~/.omp/agent/themes
 ln -s "$PWD/omp/themes/gentlemary.json" ~/.omp/agent/themes/gentlemary.json
 ```
 
-Then select **gentlemary** via `/settings` → **Appearance → Dark Theme**. This uses the OpenCode port's dark palette, with gunmetal-grey submitted prompts and neutral dark-grey successful-output panels; omp leaves your terminal's background unchanged.
+Then select **gentlemary** via `/settings` → **Appearance → Dark Theme**. This uses the OpenCode port's dark palette, with gunmetal-grey submitted prompts and darker blue-grey successful-output panels; omp leaves your terminal's background unchanged.
 
 For grey prompt borders, yellow session names and purple model names, turn off **Session Accent** in `/settings` → **Appearance → Status Line**, or run:
 
