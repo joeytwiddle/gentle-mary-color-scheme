@@ -87,7 +87,16 @@ ln -s "$PWD/opencode/themes/gentlemary.json" ~/.config/opencode/themes/gentlemar
 
 Then pick it with the `/theme` command, or set `"theme": "gentlemary"` in your `opencode.json`. Requires a truecolor terminal (`COLORTERM=truecolor`).
 
-Being a TUI theme, this one paints by broad category (keyword, string, type, …) rather than per-scope, so it's coarser than the bat, VSCode and WebStorm ports.
+The OpenCode and omp ports paint by broad category (keyword, string, type, …) rather than per-scope, so they are coarser than the bat/VSCode/WebStorm ports.
+
+### omp
+
+```sh
+mkdir -p ~/.omp/agent/themes
+ln -s "$PWD/omp/themes/gentlemary.json" ~/.omp/agent/themes/gentlemary.json
+```
+
+Then select **gentlemary** via `/settings` → **Appearance → Dark Theme**. This uses the OpenCode port's dark palette; omp leaves your terminal's background unchanged.
 
 ----
 
